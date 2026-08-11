@@ -16,8 +16,8 @@
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 name: "💻 Workstations"
 controls:
-scripts:
-  - paths: ../platforms/windows/scripts/*.ps1
+  scripts:
+    - paths: ../platforms/windows/scripts/*.ps1
   setup_experience:
     ###########################################################
     # Configure the macOS setup experience
