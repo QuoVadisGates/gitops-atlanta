@@ -16,6 +16,8 @@
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 name: "💻 Workstations"
 controls:
+scripts:
+  - paths: ../platforms/windows/scripts/*.ps1
   setup_experience:
     ###########################################################
     # Configure the macOS setup experience
@@ -75,9 +77,11 @@ controls:
     configuration_profiles:
       - paths: ../platforms/windows/configuration-profiles/*.xml
   macos_updates:
-    deadline: "2026-07-30"
+    deadline: "2026-08-30"
     minimum_version: "26.5"
-    update_new_hosts: true
+  ipados_updates:
+    deadline: "2026-08-30"
+    minimum_version: "26.2"
 
   ###########################################################
   # Managed disk encryption
@@ -88,7 +92,8 @@ controls:
   # Read more here:
   #   • https://fleetdm.com/guides/enforce-disk-encryption
   ###########################################################
-  # enable_disk_encryption: true
+  enable_disk_encryption: true
+  enable_recovery_lock_password: true
 
   ###########################################################
   # Managed OS updates
