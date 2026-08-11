@@ -43,9 +43,9 @@ controls:
   ###########################################################
   apple_settings:
     configuration_profiles:
-      path: ../platforms/ios/configuration-profiles/passcode-settings.json
-      labels_exclude_any:
-        - C-Suite
+      - path: ../platforms/ios/configuration-profiles/passcode-settings.json
+        labels_exclude_any:
+          - C-Suite
       # … e.g.
       # - path: ../lib/ios/declaration-profiles/Passcode settings.json
       # - path: ../lib/ios/configuration-profiles/self-service.mobileconfig
@@ -79,7 +79,7 @@ software:
     - slug: aws-vpn-client/darwin
       self_service: true
   packages:
-    -path: ../platforms/windows/software/cloudflare-warp.yml
+    - path: ../platforms/windows/software/cloudflare-warp.yml
       self_service: false
   app_store_apps:
     ###########################################################
@@ -120,4 +120,4 @@ labels:
   - name: C-Suite
     description: Host belonging to the C-Suite
     label_membership_type: manual
-    hosts:
+    hosts: []

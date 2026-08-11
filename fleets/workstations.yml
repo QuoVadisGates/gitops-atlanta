@@ -172,6 +172,12 @@ policies:
 ###########################################################
 software:
   fleet_maintained_apps:
+    - slug: zoom/darwin
+      self_service: true
+      setup_experience: true
+      categories:
+        - Communication
+
     # macOS apps
     # …
     # - slug: slack/darwin # Slack for macOS
@@ -193,11 +199,6 @@ software:
     #     - "x86-based Windows hosts"
 
   packages: # Custom packages (if any)
-    - path: ../platforms/macos/software/zoom.yml
-      self_service: true
-      setup_experience: true
-      categories:
-        - Communication
     # macOS custom packages
     # …
 
