@@ -1,5 +1,5 @@
--name: Department - Engineering 
-  description: Host beloging to members of the Engineering department
+- name: Department - Engineering
+  description: Host belonging to members of the Engineering department
   label_membership_type: host_vitals
   criteria:
     vital: end_user_idp_department
@@ -8,5 +8,5 @@
 - name: Uptime over 30 days
   platform: darwin
   description: Host with an uptime greater than 30 days
-  query: SELECT 1 From uptime WHERE days > 30
+  query: SELECT 1 FROM uptime WHERE days > 30
   label_membership_type: dynamic
