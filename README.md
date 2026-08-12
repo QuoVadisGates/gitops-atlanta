@@ -1,4 +1,16 @@
 # Fleet
+Multi-platform FleetDM GitOps endpoint-management lab built during Fleet GitOps Atlanta.
+
+What was built?
+Fleet configuration as code
+CI/CD through GitHub Actions
+dynamic/manual labels
+MDM configuration profiles
+OS update enforcement
+security policies
+automated remediation
+software deployment
+Bash/PowerShell automation
 
 These files allow you to configure, patch, and secure computing devices for your organization.
 
