@@ -72,16 +72,13 @@ controls:
       - paths: ../platforms/macos/declaration-profiles/*.json
       - path: ../platforms/macos/configuration-profiles/disable-bluetooth-file-sharing.mobileconfig
         labels_include_all:
-          Department - Engineering
+          - Department - Engineering
   windows_settings:
     configuration_profiles:
       - paths: ../platforms/windows/configuration-profiles/*.xml
   macos_updates:
-    deadline: "2026-08-30"
-    minimum_version: "26.5"
-  ipados_updates:
-    deadline: "2026-08-30"
-    minimum_version: "26.2"
+    deadline: "2026-07-30"
+    minimum_version: "26.4"
 
   ###########################################################
   # Managed disk encryption
@@ -171,13 +168,6 @@ policies:
 #   •  https://fleetdm.com/docs/configuration/yaml-files#software
 ###########################################################
 software:
-  fleet_maintained_apps:
-    - slug: zoom/darwin
-      self_service: true
-      setup_experience: true
-      categories:
-        - Communication
-
     # macOS apps
     # …
     # - slug: slack/darwin # Slack for macOS
@@ -199,6 +189,11 @@ software:
     #     - "x86-based Windows hosts"
 
   packages: # Custom packages (if any)
+    - path: ../platforms/macos/software/zoom.yml
+      self_service: true
+      setup_experience: true
+      categories:
+        - Communication
     # macOS custom packages
     # …
 
